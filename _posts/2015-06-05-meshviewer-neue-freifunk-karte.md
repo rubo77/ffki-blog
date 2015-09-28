@@ -7,10 +7,10 @@ author: kokel
 {: .text-center}
 [![Meshviewer](/images/blog/meshviewer.png 'Meshviewer')](/images/blog/meshviewer.png)
 
-Für die Visualisierung des Freifunk-Netzes gibt es nun die neue Freifunk Karten-Software "Meshviewer", die ab heute die alte Freifunk-Karte ablösen wird. Ein Screenshot der Meshviewer-Startseite ist auf dem obigen Screenshot zu sehen.
+Für die Visualisierung des Freifunk-Netzes gibt es nun die neue Freifunk Karten-Software "Meshviewer", die alte Freifunk-Karte ablösen wird. Ein Screenshot der Meshviewer-Startseite ist auf dem obigen Screenshot zu sehen.
 
- * [Externe Karte](http://map.wiesbaden.freifunk.net)
- * [Interne Karte](http://map.ffwi.org) (nur aus dem Freifunk-Netz erreichbar)
+ * [Externe Karte](http://map.freifunk.in-kiel.de)
+ * [Interne Karte](http://map.ffki.org) (nur aus dem Freifunk-Netz erreichbar)
 
 Die meisten Funktionen sind selbsterklärend, dennoch möchten wir Euch die wichtigsten Funktionen an dieser Stelle erläutern.
 
@@ -18,7 +18,7 @@ Der Meshviewer zeigt alle Freifunk-Knoten entweder in einer Karten- oder Graphen
 
 Eine Klick auf die Knoten-, Verbindungs-Links, etc. blendet zusätzliche Informationen ein.
 
-Knoten, die länger als 45 Tage offline sind werden automatisch entfernt.
+Knoten, die länger als 15 Tage offline sind werden automatisch entfernt.
 
 <br />
 
@@ -38,9 +38,9 @@ Knoten, die länger als 45 Tage offline sind werden automatisch entfernt.
     <p><a href="/images/blog/meshviewer_overview.png"><img src="/images/blog/meshviewer_overview.png" alt="Meshviewer - Übersicht" title="Meshviewer - Übersicht" class="right" width="500px" /></a></p>
     <p>Die erste Zeile gibt kurz und knackig Auskunft über die aktuellen Zahlen.</p>
     <p><strong>Neue Knoten</strong>:</p>
-    <p>Knoten, die innerhalb der letzten 14 Tage neu hinzugekommen sind. Die Zeit-Angabe rechts neben den Knoten-Namen zeigt nicht die Uptime, sondern wann die Knoten Teil des Freifunk-Netzes geworden sind.</p>
+    <p>Knoten, die innerhalb der letzten 2 Tage neu hinzugekommen sind. Die Zeit-Angabe rechts neben den Knoten-Namen zeigt nicht die Uptime, sondern wann die Knoten Teil des Freifunk-Netzes geworden sind.</p>
     <p><strong>Verschwundene Knoten</strong>:</p>
-    <p>Knoten, die keine Verbindung mehr zum Freifunk-Netz haben (offline). Sind Knoten länger als 14 Tage offline, werden diese auch hier nicht mehr angezeigt.</p>
+    <p>Knoten, die keine Verbindung mehr zum Freifunk-Netz haben (offline). Sind Knoten länger als 2 Tage offline, werden diese auch hier nicht mehr angezeigt.</p>
   </li>
   <li id="simple2Tab">
     <p><a href="/images/blog/meshviewer_nodes.png"><img src="/images/blog/meshviewer_nodes.png" alt="Meshviewer - Knoten" title="Meshviewer - Knoten" class="right" width="500px" /></a></p>
@@ -110,27 +110,27 @@ Karten-Provider auswählen
 <p>
   <svg height="22px" width="300px">
     <circle cx="7" cy="7" r="6" stroke-linejoin="round" stroke-linecap="round" stroke="#1566A9" stroke-opacity="0.5" stroke-width="2" fill="#93E929" fill-opacity="1" />
-    <text x="20" y="12">Neuer Knoten (jünger als 14 Tage)</text>
+    <text x="20" y="12">Neuer Knoten (jünger als 2 Tage)</text>
   </svg>
   <br />
   <svg height="22px" width="300px">
     <circle cx="7" cy="7" r="6" stroke-linejoin="round" stroke-linecap="round" stroke="#1566A9" stroke-opacity="0.5" stroke-width="2" fill="#1566A9" fill-opacity="0.5" />
-    <text x="20" y="12">Online Knoten (älter als 14 Tage)</text>
+    <text x="20" y="12">Online Knoten (älter als 2 Tage)</text>
   </svg>
   <br />
   <svg height="23px" width="300px">
     <circle class="node-alert" cx="7" cy="7" r="6" stroke-linejoin="round" stroke-linecap="round" stroke="#D43E2A" stroke-opacity="0.8" stroke-width="2" fill="#D43E2A" fill-opacity="0.8" />
-    <text x="20" y="12">Knoten Offline (nicht länger als 3 Tage)</text>
+    <text x="20" y="12">Knoten Offline (nicht länger als 8 Stunden)</text>
   </svg>
   <br />
   <svg height="22px" width="300px">
     <circle cx="7" cy="7" r="6" stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#D43E2A" stroke-opacity="0.8" stroke-width="1" fill="#D43E2A" fill-opacity="0.8" />
-    <text x="20" y="12">Knoten Offline (länger als 3 Tage)</text>
+    <text x="20" y="12">Knoten Offline (länger als 8 Stunden)</text>
   </svg>
   <br />
   <svg height="15px" width="300px">
     <circle cx="5" cy="5" r="3" stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="#D43E2A" stroke-opacity="0.5" stroke-width="2" fill="#D43E2A" fill-opacity="0.5" />
-    <text x="15" y="11">Knoten Offline (länger als 14 Tage)</text>
+    <text x="15" y="11">Knoten Offline (länger als 2 Tage)</text>
   </svg>
 </p>
 
